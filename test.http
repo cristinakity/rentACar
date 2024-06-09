@@ -1,0 +1,47 @@
+@base_url = http://localhost:3000
+
+GET {{base_url}}
+
+### carro
+
+GET {{base_url}}/carro
+
+###
+
+GET {{base_url}}/carro/66650e7fb203db57e505a0bb
+
+###
+
+POST {{base_url}}/carro
+Content-Type: application/json
+
+{
+  "codigo": "HC-Rojo-2020-001",
+  "placa": "234-erd-3",
+  "marca": "Honda",
+  "modelo": "Civic",
+  "anio": 2020,
+  "color": "Rojo"
+}
+
+###
+
+PUT {{base_url}}/carro/66650e7fb203db57e505a0bb
+Content-Type: application/json
+
+{
+  "codigo": "HC-Blanco-2020-001",
+  "placa": "234-erd-3",
+  "marca": "Honda",
+  "modelo": "Civic",
+  "año": 2020,
+  "color": "Blanco Actualizado"
+}
+
+###
+
+DELETE {{base_url}}/carro/66650d85421c9c75593135c5
+
+### carro
+
+GET {{base_url}}/carro
